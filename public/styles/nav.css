@@ -1,0 +1,29 @@
+#nav-bar {
+	background-color: #333333;
+	border-bottom: 3px hotpink solid;
+	height: 80px;
+	padding: 0em 2em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#nav-bar .logo {
+	margin-right: 10px;
+}
+
+#nav-bar .header {
+	color: #e8fdff;
+	font-size: 24px;
+	height: 80px;
+}
+	
+#nav-bar .compose {
+	float: right;
+	margin-right: 1em;
+	margin-top: 25px;
+}
+
+#nav-bar .compose:hover {
+	border: #ff84da;
+}

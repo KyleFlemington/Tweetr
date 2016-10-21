@@ -1,20 +1,41 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/compose.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
+
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    
+
+    <script type="text/javascript" src="/scripts/compose-button.js"></script>
+
+    
+
   </head>
 
   <body>
@@ -23,11 +44,45 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px">
       <span class="header">Tweeter</span>
+      <button>
+      <img src="/images/buttonfi.png" width="120px" height="30xp">
+      </button>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-    </main>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method="post" action="/tweets/">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+          
 
+        </form>
+      </section>
+
+      <section id="tweets-container">
+      </section>
+
+
+
+
+<!--
+<section>
+  <article class="pastTweet">
+    <header>
+      <img src="https://bucketlist.org/static/images/generic-profile-pic.png" width="50px" height="50px" />
+      <h3>name</h3>
+      <h4>handle</h4>
+    </header>
+    <p>content</p>
+    <footer> 
+    created_at
+    </footer>
+  </article>
+</section>
+-->
+    </main>
   </body>
 </html>

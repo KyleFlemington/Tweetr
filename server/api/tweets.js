@@ -7,17 +7,18 @@ const tweets  = express.Router();
 module.exports = function(db) {
 
   tweets.get("/", function(req, res) {
-    let tweets = db.getTweets();
-    // simulate delay
-    setTimeout(() => {
-      return res.json(tweets);
-    }, 300);
+    db.getTweets(function(tweets) {
+      res.json(tweets);
+    });
   });
 
   tweets.post("/", function(req, res) {
     if (!req.body.text) {
       res.status(400);
       return res.send("{'error': 'invalid request'}\n");
+    } else {
+      console.log("got new tweet with this body: ", 
+        req.body.text);
     }
 
     const user = req.body.user ? req.body.user : User.generateRandomUser();

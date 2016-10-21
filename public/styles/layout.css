@@ -10,14 +10,128 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+
+main.container {
+	background-color: white;
+	height: 100%;
+	margin-top: 140px;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 8%;
+	padding-top: 25px;
+	width: 450px;
+
+}
 
 body {
-  margin: 0;
+  background-color: #d8d6d8;
   color: #244751;
-  background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+header {
+	margin-right: 10px;
+	padding-bottom: 20px;
+}
+
+article.pastTweet {
+	background-color: #ebebeb;
+	border-radius: 25px; 
+	border: 1px #FF0080 solid;
+	margin: 2em auto;
+	padding: auto;
+	width: 90%;
+}
+
+article header {
+	align: center;
+	background-color: #2088B2;
+	border-radius: 25px 25px 0px 0px;
+	height: 75px;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 100%;
+}
+
+article p {
+	color: black;
+	height: 145px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+article footer {
+	border-top: 1px solid #FF0080;
+	height: 10px;
+	padding-left: 15px;
+	padding-top: 12px;
+}
+
+article img {
+	border-radius: 25px;
+	float: left;
+}
+
+h3 {
+	color: #F5F5F5;
+	float: left;
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 12px;
+}
+
+h4 {
+	color: #F5F5F5;
+	float: right;
+	font-size: 15px;
+	margin: 0;
+	padding-right: 15px;
+	padding-top: 2px;
+	
+}
+
+article.tweet:hover{
+	border: 2px #FF0080 solid;
+	border-radius: 28px 28px 28px 28px;
+}
+
+article.tweet {
+	background-color: #ebebeb;
+	border-radius: 25px; 
+	border: 1px #FF0080 solid;
+	height: 275px;
+	margin: 2em auto;
+	padding: auto;
+	width: 90%;
+}
+
+footer span.glyphicon {
+	color: #FF0080;
+	float: right;
+	padding-right: 15px;
+}
+	
+footer span.glyphicon:hover {
+	color: #333333;
+}
+
+
+tweets-container.footer {
+	padding-top: 10px;
+}
+
+
+button {
+	background-color: #333333;
+	border: none;
+	float: right;
+	margin-top: 20px;
+}
+
+button:hover {
+	height: 35px;
+	width: 145px;
 }
 
 /*

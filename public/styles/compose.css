@@ -1,0 +1,40 @@
+section.new-tweet {
+	background-color: #ebebeb;
+	border-radius: 25px; 
+	border: 1px #FF0080 solid;
+	margin: auto;
+	padding: 20px;
+	width: 90%;
+}
+
+h2 {
+	color: #3B3B3B;
+	margin: auto;
+	padding-bottom: 25px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+span.counter {
+	float: bottom;
+	float: right; 
+	font-style: italic;
+	padding-right: 5px;
+	padding-top: 15px;
+}
+
+textarea {	
+	border-radius: 5px;
+	margin: auto;
+	width: 100%;
+}
+
+input {
+	border: 1px #3B3B3B solid;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 15px;
+}
+
+.error {
+	color: red;
+}
